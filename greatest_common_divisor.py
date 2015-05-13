@@ -30,5 +30,6 @@ class GreatestCommonDivisor:
             if number % index == 0:
                 return number // index
             else:
+                # NOTE Python doesn't have ++ operator! Interprets ++ as two unary adds.
                 index += 1
         return 1

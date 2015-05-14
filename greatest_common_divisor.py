@@ -6,6 +6,7 @@ class GreatestCommonDivisor:
     Methods to return greatest common divisor of two numbers.
     """
 
+    @staticmethod
     def greatest_common_divisor(a, b):
         """ return greatest common divisor of two numbers.
         return 0 if a <= 0 or b <= 0
@@ -24,6 +25,7 @@ class GreatestCommonDivisor:
             else:
                 divisor = GreatestCommonDivisor.next_smaller_divisor(a, divisor)
 
+    @staticmethod
     def next_smaller_divisor(number, divisor):
         index = (number // divisor) + 1
         while index <= number:
